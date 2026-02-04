@@ -10,20 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-      name: Pre-commit
-
-      on:
-        pull_request:
-          branches: [main]
-
-      jobs:
-        pre-commit:
-          runs-on: ubuntu-latest
-          steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
-            - uses: pre-commit/action@v3.0.0
-            - name: Run ESLint
-              run: |
-                npm install
-                npm run lint
+      - uses: pre-commit/action@v3.0.0
+      - name: Run ESLint
+        run: |
+          npm install
+          npm run lint
