@@ -1,0 +1,170 @@
+Equivalence Partitioning
+ 
+1. Function that validates credit card numbers.
+   - Valid card numbers: Length between 13 and 16 digits, containing only numeric digits.
+prueva 1:
+input 12131415161718
+output válido
+prueva 2:
+input 121314151617
+output no válido 
+prueva 3:
+input 1213a141651.
+output no válido 
+
+2. Function that validates dates.
+   - Valid years: Between 1900 and 2100.
+   - Valid months: Between 1 and 12.
+   - Valid days: Between 1 and 31.
+prueva 1:
+input 2004/11/08
+output válido 
+prueva 2:
+input 2100/14/35
+output no válido 
+prueva 3: 
+input 1889/12/32
+output no válido  
+3. Function that checks the eligibility of a passenger to book a flight.
+   - Eligible ages: Between 18 and 65.
+   - Frequent flyers: True or False.
+prueva 1:
+input 18 True
+output válido 
+prueva 2:
+input 65 false 
+output válido
+prueva 3:
+input 66 true 
+output no válido 
+prueva 4:
+input 17 true 
+output no válido 
+
+
+4. Function that validates URLs.
+   - Valid URLs: Length less than or equal to 255, starting with "http://" or "https://".
+prueva 1:
+input asdfgghhksñadieolsie
+output no válido 
+prueva 2:
+input https://
+output no válido 
+prueva  3:
+input https://jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+output no válido 
+prueva 4: 
+input http://jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+output no válido 
+prueva  5:
+input https://platzi.com/live
+output válido 
+
+
+Boundary Value Analysis
+
+1. Function that calculates the eligibility of a person for a loan based on their income and credit score.
+   The eligibility rules are as follows:
+   - If the income is less than $30,000, the person is not eligible for a loan.
+   - If the income is between $30,000 and $60,000 (inclusive) and the credit score is above 700, the person is eligible for a standard loan.
+   - If the income is between $30,000 and $60,000 (inclusive) and the credit score is below or equal to 700, the person is eligible for a secured loan.
+   - If the income is greater than $60,000 and the credit score is above 750, the person is eligible for a premium loan.
+   - If the income is greater than $60,000 and the credit score is between 700 and 750 (inclusive), the person is eligible for a standard loan.
+prueva 1: 
+input 27000
+output no válido 
+prueva 2: 
+input  30000  701
+output standard loan
+prueva 3:
+input 60000 701
+output standard loan
+prueva 4:
+input 30000 700
+output secured loan
+prueva 5:
+input 60000 700
+output  secured loan
+prueva 6:
+input 61000 751
+output premium loan
+prueva 7:
+input 61000 750
+output standard loan
+2. Function that determines the category of a product in an e-commerce system based on its price.
+   The product categories and pricing rules are as follows:
+   - Category A: Products priced between $10 and $50 (inclusive).
+   - Category B: Products priced between $51 and $100 (inclusive).
+   - Category C: Products priced between $101 and $200 (inclusive).
+   - Category D: Products priced above $200.
+prueva 1:
+input 10 
+output category A
+ prueva 2:
+ input 50
+ output category  A
+ prueva 3:
+ input 51
+ output category B
+ prueva   4:
+ input 100
+ output category B
+prueva 5
+input 101 
+output category C
+prueva 6:
+input 200
+output category C
+prueva 7:
+input 201
+output category D
+
+3. Function that calculates the cost of shipping for packages based on their weight and dimensions.
+   The shipping cost rules are as follows:
+   - If the weight of the package is less than or equal to 1 kg and the dimensions (length, width, and height) are each less than or equal to 10 cm, the cost is $5.
+   - If the weight is between 1 and 5 kg (inclusive) and the dimensions are each between 11 and 30 cm (inclusive), the cost is $10.
+   - If the weight is greater than 5 kg or any of the dimensions is greater than 30 cm, the cost is $20.
+prueva 1:
+input 0.99 9, 9, 9
+output  5
+prueva 2:
+input 2 11 11 11 11 
+output 10
+prueva 3:
+input 5 30 30 30 
+output 10
+prueva 4: 
+input 5.01 30.01 30.01 30.01 
+output 20
+
+
+Decision Table
+
+1. Create the decision table for a system that provides weather advisories based on temperature and humidity.
+   The rules are:
+   - Weather recommendation "High temperature and humidity. Stay hydrated." for temperature > 30 and humidity > 70.
+   - Weather recommendation "Low temperature. Don't forget your jacket!" for temperature < 0 and any humidity.
+   - No weather recommendation for any other temperature and humidity combination.
+prueva 1:
+input t31 u71
+output Stay hydrated
+prueva 2: 
+input t-1 u 12 
+output Don't forget your jacket
+2. Create the decision table for a system that authenticates users based on their username and password.
+   The rules are:
+   - Returns "Admin" for username "admin" and password "admin123".
+   - Returns "User" for any other username with at least 5 characters and password with at least 8 characters.
+   - Returns "Invalid" if the username or password lenghts are not met.
+prueva 1:
+input user admin password admin123
+output admin
+pureva 2: 
+input user emmanuel password emmanuel2004
+output user 
+prueva 3: 
+input user emma password  emmanuel2004
+output Invalid
+prueva 4:
+input user emmanuel  password emma
+output   Invalid

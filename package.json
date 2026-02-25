@@ -1,0 +1,24 @@
+{
+  "name": "practicapruebasestaticas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelPulidoTinajero/practicapruebasestaticas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EmmanuelPulidoTinajero/practicapruebasestaticas/issues"
+  },
+  "homepage": "https://github.com/EmmanuelPulidoTinajero/practicapruebasestaticas#readme",
+  "dependencies": {
+    "lint": "^0.8.19"
+  }
+}
