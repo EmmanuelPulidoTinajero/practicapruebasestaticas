@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from mockup_exercises import fetch_data_from_api
+from white_box.mockup_exercises import fetch_data_from_api
 import json
 from unittest.mock import Mock
 

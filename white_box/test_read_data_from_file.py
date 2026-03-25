@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from mockup_exercises import read_data_from_file
+from white_box.mockup_exercises import read_data_from_file
 
 class TestReadDataFromFile(unittest.TestCase):
 

@@ -12,7 +12,7 @@ Test Cases:
         - subprocess.run is called exactly once with the correct parameters (command, shell=True, capture_output=True, text=True)
         - execute_command properly raises an Exception when subprocess.run fails
 """
-from mockup_exercises import execute_command
+from white_box.mockup_exercises import execute_command
 from unittest.mock import patch
 
 class Test_execute_command(unittest.TestCase):

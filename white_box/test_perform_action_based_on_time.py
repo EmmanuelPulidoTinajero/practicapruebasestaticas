@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from mockup_exercises import perform_action_based_on_time
+from white_box.mockup_exercises import perform_action_based_on_time
 
 class Test_perform_action_based_on_time(unittest.TestCase):
 
