@@ -16,6 +16,10 @@ def validate_password(password):
     if len(password) < 8:
         errors.append("Password must be at least 8 characters")
     
+    # Check for at least 2 numbers
+    if sum(1 for char in password if char.isdigit()) < 2:
+        errors.append("The password must contain at least 2 numbers")
+    
     return {
         'valid': len(errors) == 0,
         'errors': errors
