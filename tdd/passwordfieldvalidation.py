@@ -20,6 +20,14 @@ def validate_password(password):
     if sum(1 for char in password if char.isdigit()) < 2:
         errors.append("The password must contain at least 2 numbers")
     
+    # Check for at least one capital letter
+    if not any(char.isupper() for char in password):
+        errors.append("password must contain at least one capital letter")
+    
+    # Check for at least one special character
+    if not any(char in "!@#$%^&*()_+-=[]{}|;:,.<>?" for char in password):
+        errors.append("password must contain at least one special character")
+    
     return {
         'valid': len(errors) == 0,
         'errors': errors,
