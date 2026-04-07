@@ -41,3 +41,7 @@ class StringCalculator:
         
         if errors:
             raise ValueError('\n'.join(errors))
+        
+        # Filter out numbers bigger than 1000
+        filtered_numbers = [n for n in numbers_list if n <= 1000]
+        return sum(filtered_numbers)
