@@ -13,3 +13,13 @@ class TestPasswordFieldValidation(unittest.TestCase):
             result = self.validator.validate("validpass123")
             self.assertTrue(result['valid'])
             self.assertEqual([], result['errors'])
+
+    def test_password_missing_numbers(self):
+        result = self.validator.validate("validpass1")
+        self.assertFalse(result['valid'])
+        self.assertIn("The password must contain at least 2 numbers", result['errors'])
+
+    def test_password_with_two_numbers(self):
+        result = self.validator.validate("validpass12")
+        self.assertTrue(result['valid'])
+        self.assertEqual([], result['errors'])
