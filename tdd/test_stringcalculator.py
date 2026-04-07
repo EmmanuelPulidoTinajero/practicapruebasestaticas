@@ -46,3 +46,10 @@ class TestStringCalculator(unittest.TestCase):
                         def test_multiple_negative_numbers_raises_error(self):
                             with self.assertRaisesRegex(ValueError, r"Negative number\(s\) not allowed: -4,-9"):
                                 self.calculator.add("2,-4,-9")
+
+                                    def test_multiple_errors_returns_all_messages(self):
+                                        with self.assertRaisesRegex(
+                                            ValueError,
+                                            r"Negative number\(s\) not allowed: -3\n'' expected but .* found at position 3",
+                                        ):
+                                            self.calculator.add("//\n1|2,-3")
