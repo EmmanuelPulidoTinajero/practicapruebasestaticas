@@ -22,5 +22,6 @@ def validate_password(password):
     
     return {
         'valid': len(errors) == 0,
-        'errors': errors
+        'errors': errors,
+        'error_message': '\n'.join(errors) if errors else None
     }
