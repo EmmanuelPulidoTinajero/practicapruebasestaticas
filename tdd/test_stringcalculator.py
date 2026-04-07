@@ -53,3 +53,6 @@ class TestStringCalculator(unittest.TestCase):
                                             r"Negative number\(s\) not allowed: -3\n'' expected but .* found at position 3",
                                         ):
                                             self.calculator.add("//\n1|2,-3")
+
+                                                def test_numbers_bigger_than_1000_are_ignored(self):
+                                                    self.assertEqual(self.calculator.add("2,1001"), 2)
