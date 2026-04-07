@@ -27,3 +27,11 @@ class StringCalculator:
             if normalized_numbers.endswith(','):
             raise ValueError("Invalid input: separator at the end is not allowed")
             return sum(map(int, normalized_numbers.split(',')))
+
+                # Check for negative numbers
+                numbers_list = list(map(int, normalized_numbers.split(',')))
+                negatives = [str(n) for n in numbers_list if n < 0]
+                if negatives:
+                    raise ValueError(f"Negative number(s) not allowed: {','.join(negatives)}")
+                
+                return sum(numbers_list)
