@@ -23,3 +23,9 @@ class TestPasswordFieldValidation(unittest.TestCase):
         result = self.validator.validate("validpass12")
         self.assertTrue(result['valid'])
         self.assertEqual([], result['errors'])
+
+        def test_password_multiple_errors(self):
+        result = self.validator.validate("somepassword")
+        self.assertFalse(result['valid'])
+        self.assertIn("Password must be at least 8 characters", result['errors'])
+        self.assertIn("The password must contain at least 2 numbers", result['errors'])
